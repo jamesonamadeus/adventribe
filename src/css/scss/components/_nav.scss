@@ -1,18 +1,19 @@
 .nav {
+  padding: 0 20px;
   width: 100%;
 
   &-list {
     @include flexbox(flex);
     @include align-items(center);
-    @include justify-content(space-around);
+    @include justify-content(flex-end);
     padding-left: 0;
-    margin: 10px 0;
+    margin: 9px 0px 9px;
   }
 
   &-item {
     color: $white;
     list-style: none;
-    margin: 0 10px;
+    margin: 5px 10px 0px;
     cursor: pointer;
     text-align: center;
 
@@ -25,41 +26,52 @@
 
   &-link {
     @include transition(0.3s all ease);
-    @include font-size(18);
-    color: $black;
-    padding: 15px 18px;
+    @include font-size(22);
+    color: $blackgrey;
+    font-family: $font-secondary;
+    padding: 15px 18px 10px;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &-cta {
     @include transition(0.3s all ease);
-    background: $white;
-    border: 1px solid $white;
+    background: $blackgrey;
+    border: 3px solid $blackgrey;
     border-radius: 3px;
-    padding: 6px 10px 5px;
+    padding: 7px 10px 1px;
     color: $white;
     margin-left: 20px;
 
+    .nav-link {
+      color: $white;
+    }
+
     &:hover {
       background: $white;
-      border: 1px solid $color-primary;
+      border: 3px solid $blackgrey;
+      text-decoration: none !important;
+
+      .nav-link {
+        color: $blackgrey;
+      }
     }
   }
 }
 
-@media only screen and (max-width: $break-xlg) {
-  .nav {
-    &-item {
-      margin: 0 5px;
-    }
-  }
-}
+// @media only screen and (max-width: $break-xlg) {
+//   .nav {
+//     &-item {
+//       margin: 0 5px;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: $break-lg) {
-  .nav {
-    &-item {
-      margin: 0 5px;
-    }
-  }
-}
+// @media only screen and (max-width: $break-lg) {
+//   .nav {
+//     &-item {
+//       margin: 0 5px;
+//     }
+//   }
+// }

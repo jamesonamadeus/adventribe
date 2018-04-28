@@ -8,14 +8,14 @@
       @include transition(all 0.5s ease);
       @include font-size(28);
       margin: 0;
-      width: 0%;
+      height: 64px;
     }
 
     &-img {
       @include transition(all 0.1s ease);
-      opacity: 0;
-      margin: 10px 10px 0 30px;
-      width: 180px;
+      margin: 10px 10px 0 20px;
+      height: 50px;
+      width: 50px;
     }
   }
 
@@ -23,9 +23,8 @@
     @include transition(all 0.5s ease);
     @include flexbox(flex);
     @include align-items(center);
-    @include justify-content(space-between);
+    @include justify-content(center);
     background: transparent;
-    border-bottom: 1px solid $color-primary;
     z-index: 75;
     width: 100%;
 
@@ -40,10 +39,10 @@
         width: 20%;
       }
 
-      .logo-img {
-        @include transition(all 1s ease);
-        opacity: 1;
-      }
+      //   .logo-img {
+      //     @include transition(all 1s ease);
+      //     opacity: 1;
+      //   }
     }
   }
 }
