@@ -1,0 +1,37 @@
+.hero {
+  background: url(../images/bg-lg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 320px;
+  width: 100%;
+  @include flexbox(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  position: relative;
+
+  h2 {
+    @include font-size(48);
+    // font-family: $font-secondary;
+    color: $white;
+    text-align: center;
+    margin: 0 auto 5px;
+  }
+
+  &-logo {
+    max-width: 480px;
+  }
+
+  &-cta {
+    @include font-size(24);
+    border: 1px solid $white;
+    font-weight: 300;
+    padding: 12px 22px 14px;
+    &:hover {
+      background: $white;
+      border: 1px solid $white;
+    }
+  }
+}
