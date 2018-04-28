@@ -14,19 +14,24 @@
 
   h2 {
     @include font-size(48);
-    // font-family: $font-secondary;
+    font-family: $font-secondary;
     color: $white;
     text-align: center;
     margin: 0 auto 5px;
   }
 
   &-cta {
+    @include transition(0.3s all ease);
     @include font-size(24);
     border: 1px solid $white;
+    cursor: pointer;
+    color: $white;
     font-weight: 300;
     padding: 12px 22px 14px;
+    min-width: 200px;
+
     &:hover {
-      background: $white;
+      background: $blackgrey;
       border: 1px solid $white;
     }
   }
