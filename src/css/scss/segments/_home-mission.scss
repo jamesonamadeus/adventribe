@@ -3,7 +3,7 @@
   @include flex-direction(row);
   @include align-items(center);
   @include justify-content(center);
-  border-bottom: 3px solid $style-5;
+  border-bottom: 2px solid $style-5;
   padding: 0 !important;
 
   &-contain {
@@ -23,7 +23,7 @@
 
   &-img {
     background: $style-2;
-    border-left: 3px solid $style-5;
+    border-left: 4px solid $style-5;
     width: 40%;
   }
 }

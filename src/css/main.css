@@ -456,7 +456,7 @@ object {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  border-bottom: 3px solid #0f6b9f;
+  border-bottom: 2px solid #0f6b9f;
   padding: 0 !important; }
   .mission-contain {
     min-height: 320px; }
@@ -470,13 +470,35 @@ object {
       font-weight: 500; }
   .mission-img {
     background: #feddc6;
-    border-left: 3px solid #0f6b9f;
+    border-left: 4px solid #0f6b9f;
     width: 40%; }
 
+.benefits {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .benefits-contain {
+    border: 2px solid #0f6b9f;
+    border-bottom-width: 4px;
+    min-height: 280px;
+    padding: 20px;
+    width: 25%; }
+    .benefits-contain h4 {
+      font-size: 26px !important;
+      font-size: 1.625rem !important; }
+
 .main-section {
-  min-height: 300px;
+  min-height: 250px;
   text-align: center;
-  padding: 20px;
   width: 100%; }
 
 body {

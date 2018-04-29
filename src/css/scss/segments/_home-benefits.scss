@@ -1,0 +1,18 @@
+.benefits {
+  @include flexbox(flex);
+  @include flex-direction(row);
+  @include align-items(flex-start);
+  @include justify-content(center);
+
+  &-contain {
+    border: 2px solid $style-5;
+    border-bottom-width: 4px;
+    min-height: 280px;
+    padding: 20px;
+    width: 25%;
+
+    h4 {
+      @include font-size(26);
+    }
+  }
+}
