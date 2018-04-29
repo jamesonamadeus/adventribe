@@ -1,0 +1,34 @@
+.info {
+  @include flexbox(flex);
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(center);
+  padding: 0 !important;
+  border-bottom: 3px solid $style-5;
+
+  &-contain {
+    min-height: 320px;
+    padding: 20px;
+    width: 33.33333%;
+
+    h4 {
+      @include font-size(30);
+    }
+  }
+
+  &-left {
+    background: lighten($style-1, 30%);
+  }
+
+  &-mid {
+    background: lighten($style-4, 35%);
+  }
+
+  &-right {
+    background: lighten($style-5, 45%);
+
+    ul > li {
+      text-align: left;
+    }
+  }
+}

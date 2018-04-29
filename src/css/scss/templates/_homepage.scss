@@ -1,3 +1,8 @@
-// .main {
-//   margin-top: -62px;
-// }
+.main {
+  &-section {
+    min-height: 300px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+}
