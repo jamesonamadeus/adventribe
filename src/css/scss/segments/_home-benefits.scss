@@ -5,6 +5,7 @@
   @include justify-content(center);
 
   &-contain {
+    background: lighten($style-4, 20%) !important;
     border: 2px solid $style-5;
     border-bottom-width: 4px;
     min-height: 280px;
@@ -12,7 +13,12 @@
     width: 25%;
 
     h4 {
-      @include font-size(26);
+      @include font-size(28);
+      color: $white;
+    }
+
+    p {
+      color: $white;
     }
   }
 }

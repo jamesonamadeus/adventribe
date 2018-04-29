@@ -487,14 +487,42 @@ object {
   -webkit-justify-content: center;
   justify-content: center; }
   .benefits-contain {
+    background: #73e2e8 !important;
     border: 2px solid #0f6b9f;
     border-bottom-width: 4px;
     min-height: 280px;
     padding: 20px;
     width: 25%; }
     .benefits-contain h4 {
-      font-size: 26px !important;
-      font-size: 1.625rem !important; }
+      font-size: 28px !important;
+      font-size: 1.75rem !important;
+      color: #fff; }
+    .benefits-contain p {
+      color: #fff; }
+
+.volunteer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%; }
+  .volunteer-contain {
+    border-bottom: 4px solid #0f6b9f;
+    min-height: 280px;
+    padding: 20px;
+    width: 100%; }
+    .volunteer-contain h3 {
+      font-size: 32px !important;
+      font-size: 2rem !important;
+      font-weight: 600; }
 
 .main-section {
   min-height: 250px;

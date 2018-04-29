@@ -1,0 +1,19 @@
+.volunteer {
+  @include flexbox(flex);
+  @include flex-direction(row);
+  @include align-items(flex-start);
+  @include justify-content(center);
+  width: 100%;
+
+  &-contain {
+    border-bottom: 4px solid $style-5;
+    min-height: 280px;
+    padding: 20px;
+    width: 100%;
+
+    h3 {
+      @include font-size(32);
+      font-weight: 600;
+    }
+  }
+}
